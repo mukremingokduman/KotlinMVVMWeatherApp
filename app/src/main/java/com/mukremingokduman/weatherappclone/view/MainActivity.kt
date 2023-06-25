@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
 
-        var cName = GET.getString("cityName","sakarya")
+        var cName = GET.getString("cityName","Sakarya")
         edt_city_name.setText(cName)
         viewModel.refreshData(cName!!)
 
